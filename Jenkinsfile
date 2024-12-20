@@ -82,6 +82,13 @@ pipeline {
                 }
             }
         }
+
+        // Stage 5: Echo Stage (Simple echo message)
+        stage('Echo Stage') {
+            steps {
+                echo 'This is a simple echo message after the pipeline stages.'
+            }
+        }
     }
 
     post {
@@ -93,3 +100,4 @@ pipeline {
         }
     }
 }
+
